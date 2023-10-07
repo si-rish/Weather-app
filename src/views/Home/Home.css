@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Kanit:wght@300;400&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;500&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.app-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 55px auto 45px;
+}
+
+.search-bar{
+    font-size: 1.1rem;
+    display: block;
+    margin: 20px auto 3px;
+    width: 30%;
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+    padding: 5px 25px;
+    background-color: #bef5ef;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.search-bar::placeholder{
+    font-size: 12px;
+}
+
+.weather-info{
+    border: 1px solid #292929;
+    width: fit-content;
+    padding: 25px 50px;
+    margin: 100px auto 0px;
+    border-radius: 25px;
+    border: none;
+    background: #0000003f;
+    color: #bef5ef;
+    line-height: 8px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.city-temp{
+    text-align: center;
+    font-size: 1rem;
+    padding: 25px 50px;
+}
+
+.city-name{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+
+.message-alert{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
