@@ -103,7 +103,6 @@ function Home() {
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',
                 backgroundRepeat: 'no-repeat',
-                minHeight: '100vh',
                 margin: 0,
                 padding: 0,
             }}>
