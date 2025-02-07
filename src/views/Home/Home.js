@@ -24,8 +24,8 @@ function Home() {
         setLoading(true);
         setFade(false);
         try {
-            const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
-            const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
+            // const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+            const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=16691c34fcdf56070185da6b2b944c91`);
 
 
             setTemperature((response.data.main.temp - 273).toFixed(2));
