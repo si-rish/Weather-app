@@ -24,8 +24,10 @@ function Home() {
         setLoading(true);
         setFade(false);
         try {
-            const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=16691c34fcdf56070185da6b2b944c91`);
-            
+            const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+            const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`);
+
+
             setTemperature((response.data.main.temp - 273).toFixed(2));
             setFeelsLike((response.data.main.feels_like - 273).toFixed(2));
             setHumidity(response.data.main.humidity);
@@ -94,17 +96,17 @@ function Home() {
     };
 
     return (
-        <div className="app-container" 
-        style={{
-            backgroundImage: `url('./assets/${backgroundImage}')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            backgroundRepeat: 'no-repeat',
-            minHeight: '100vh',
-            margin: 0,
-            padding: 0,
-        }}>
+        <div className="app-container"
+            style={{
+                backgroundImage: `url('./assets/${backgroundImage}')`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundAttachment: 'fixed',
+                backgroundRepeat: 'no-repeat',
+                minHeight: '100vh',
+                margin: 0,
+                padding: 0,
+            }}>
             <h1 className='app-title'>Weather Forecast</h1>
 
             <div className='search-container'>
