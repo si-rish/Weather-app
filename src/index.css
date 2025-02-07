@@ -5,7 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background: url('../public/_background-image.png') ;
+  /* background: url('../public/assets/bg-image.png') ; */
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
